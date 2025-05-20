@@ -129,11 +129,11 @@ a:focus {
   min-height: auto;
   background: linear-gradient(130deg, #231a6f, #0f054c);
 }
-
+/*
 .sub_page .hero_area .hero_bg_box {
   display: none;
 }
-
+*/
 .header_section {
   padding: 15px 0;
 }
@@ -1060,7 +1060,7 @@ a:focus {
 /* Keep links group centered */
 .info_link_box {
   margin: 0 auto;
-  margin-left: 60px;
+  margin-left: 100px;
 }
 
 /* Push Legal section to the far right */
@@ -1290,5 +1290,270 @@ a:focus {
   box-shadow: 0 0 15px rgba(0, 187, 240, 0.7);
   transform: scale(1.1);
 }
+/* Hide carousel arrows on small screens */
+@media (max-width: 768px) {
+  .custom-prev,
+  .custom-next {
+    display: none !important;
+  }
+}
+/* Fix footer layout for mobile screens */
+@media (max-width: 768px) {
+  .info_section .row {
+    flex-direction: column !important;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .info_section .info_col {
+    width: 100% !important;
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .info_link_box .row {
+    flex-direction: column;
+  }
+
+  .info_link_box .col-6 {
+    width: 100%;
+    padding: 0;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .info_link_box a,
+  .info_terms a {
+    text-align: left !important;
+    display: block;
+    width: 100%;
+    margin: 4px 0;
+  }
+
+  .info_terms {
+    margin-left: 0 !important;
+    text-align: left !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .info_contact .contact_link_box a {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  .info_section .info_col {
+    text-align: left !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .info_link_box .col-6 {
+    align-items: flex-start !important;
+  }
+
+  .info_terms {
+    text-align: left !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0 !important;
+  }
+
+  .info_link_box a,
+  .info_terms a {
+    text-align: left !important;
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .info_section .row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .info_section .info_col {
+    width: 100% !important;
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 0 !important;
+  }
+
+  .info_link_box,
+  .info_terms,
+  .info_contact {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .info_link_box .row {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .info_link_box .col-6 {
+    width: 100%;
+    padding: 0 !important;
+    align-items: flex-start !important;
+  }
+
+  .info_link_box a,
+  .info_terms a,
+  .info_contact a {
+    text-align: left !important;
+    display: block;
+    width: 100%;
+    margin: 4px 0;
+  }
+
+  .info_terms h4,
+  .info_link_box h4,
+  .info_contact h4 {
+    text-align: left;
+  }
+
+  .info_terms {
+    margin-left: 0 !important;
+    text-align: left !important;
+  }
+
+  .info_contact .contact_link_box a {
+    justify-content: flex-start !important;
+  }
+}
+@media (max-width: 768px) {
+  /* Remove left offset from Links group */
+  .info_link_box {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+  
+
+  /* Fix inner columns inside Links */
+  .info_link_box .col-6 {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Align all headers and links equally */
+  .info_link_box h4,
+  .info_terms h4,
+  .info_contact h4 {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .info_link_box a,
+  .info_terms a,
+  .info_contact a {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  /* Ensure main container also has no side padding difference */
+  .info_section .info_col {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+.info_link_box .link_heading {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.info_link_box .link_heading h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.links-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.link-columns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.link-columns .col-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .links-title {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .link-columns {
+    flex-direction: column;
+    gap: 0;
+    padding-left: 10px;
+  }
+
+  .link-columns .col-6 {
+    width: 100%;
+    align-items: flex-start;
+  }
+}
+ .links-title {
+  text-align: left;
+  margin-bottom: 10px;
+  padding-left: 100px; !important
+}
+@media (max-width: 768px) {
+  .hero_bg_box {
+    display: block !important;
+    z-index: -1;
+  }
+}
+.hero_area .hero_bg_box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.hero_bg_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  display: block !important;
+}
+
+.hero_bg_box .bg_img_box {
+  height: 100%;
+  width: 100%;
+}
+
+.hero_bg_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .hero_bg_box {
+    display: block !important;
+  }
+}
+
 
 /*# sourceMappingURL=style.css.map */
