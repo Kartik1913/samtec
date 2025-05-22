@@ -1675,5 +1675,25 @@ a:focus {
     display: none !important;
   }
 }
+@media (max-width: 768px) {
+  .slider_section .img-box {
+    height: 180px; /* Increase this value for more space */
+    display: flex;
+    align-items: flex-start; /* Ensures image starts at the top of the box */
+    justify-content: center;
+    position: relative;
+  }
+  .carousel-img {
+    max-height: 160px;
+    margin-top: 100px !important; /* Lower value moves image up, higher moves it down */
+    width: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  .slider_section {
+    padding-bottom: 80px !important;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
