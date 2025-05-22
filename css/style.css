@@ -1604,5 +1604,49 @@ a:focus {
     display: block !important;
   }
 }
+@media (max-width: 768px) {
+  /* Reset all padding and margin on root elements */
+  html, body {
+    background-color: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Force hero section and all its children to white */
+  .hero_area,
+  .hero_bg_box,
+  .bg_img_box,
+  .heading-below-navbar,
+  .header_section {
+    background-color: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Prevent wave SVG or any accidental overflow */
+  .wave-svg {
+    display: none !important;
+  }
+
+  /* Prevent horizontal scrolling from rogue content */
+  .container,
+  .row,
+  .col-md-6,
+  .carousel-item,
+  .img-box,
+  .detail-box {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Box-sizing fix for weird padding artifacts */
+  * {
+    box-sizing: border-box !important;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
