@@ -1605,5 +1605,68 @@ a:focus {
     color: #3555aa !important;
   }
 }
+@media (max-width: 768px) {
+  /* Make top header and navbar background white */
+  .header_section,
+  .hero_area,
+  .hero_bg_box,
+  .bg_img_box {
+    background-color: #ffffff !important;
+  }
 
+  /* Make the background behind "Nesting Software" text white */
+  .heading-below-navbar {
+    background-color: #ffffff !important;
+  }
+
+  /* Remove unwanted blue SVG wave if visible */
+  .wave-svg {
+    display: none !important;
+  }
+
+  /* Optional: ensure no left/right blue margins */
+  body, html {
+    background-color: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+}
+@media (max-width: 768px) {
+  /* Fix the Nesting Software header area */
+  .heading-below-navbar {
+    background-color: #ffffff !important;
+    margin: 0 !important;
+    padding: 15px 5vw 10px 5vw !important; /* consistent padding */
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .heading-below-navbar h1 {
+    color: #3555aa !important;
+    font-size: 1.8rem !important;
+    text-align: left !important;
+  }
+
+  /* Make sure the entire hero area is white */
+  .hero_area,
+  .hero_bg_box,
+  .bg_img_box {
+    background-color: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  body, html {
+    background-color: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  .wave-svg {
+    display: none !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
