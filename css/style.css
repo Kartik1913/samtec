@@ -399,7 +399,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #3555aa;
+  background-color: #00bbf0;
 }
 
 .service_section {
@@ -1644,7 +1644,7 @@ a:focus {
 
   .heading-below-navbar h1 {
     color: #3555aa !important;
-    font-size: 1.8rem !important;
+    font-size: 25px !important;
     text-align: left !important;
   }
 
@@ -1669,4 +1669,5 @@ a:focus {
     display: none !important;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
