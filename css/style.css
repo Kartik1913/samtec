@@ -1587,23 +1587,23 @@ a:focus {
   font-weight: bold !important;
 }
 @media (max-width: 768px) {
+  /* Force white background on mobile */
   .hero_bg_box {
-    background-color: white !important;
-    display: block !important;
-    height: 100vh !important;
-    width: 100% !important;
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    background-color: #ffffff !important;
+  }
+
+  .slider_section,
+  body {
+    background-color: #ffffff !important;
   }
 
   .wave-svg {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
+    fill: #ffffff !important;
+  }
+
+  .slider_section .detail-box {
+    color: #3555aa !important;
   }
 }
-
 
 /*# sourceMappingURL=style.css.map */
