@@ -1586,4 +1586,23 @@ a:focus {
 .navbar-nav .nav-link {
   font-weight: bold !important;
 }
+@media (max-width: 768px) {
+  .hero_bg_box {
+    background-color: white !important;
+    display: block !important;
+    height: 100vh !important;
+    width: 100% !important;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .wave-svg {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
