@@ -1577,19 +1577,9 @@ a:focus {
 }
 
 .wave-svg {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: auto;
-  display: block;
-  position: absolute;
-  left: 0;
-}
-
-.top-wave {
-  top: 0;
-  transform: rotate(180deg);
-}
-
-.bottom-wave {
-  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
