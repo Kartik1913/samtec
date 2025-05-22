@@ -1554,6 +1554,10 @@ a:focus {
     display: block !important;
   }
 }
-
+.carousel-item img {
+  width: auto; /* Ensures the image takes the full width of the container */
+  height: 200px; /* Adjusts the image height to 50% of the viewport height  small */
+  object-fit: contain; /* Ensures the image covers the entire container without distortion */
+}
 
 /*# sourceMappingURL=style.css.map */
