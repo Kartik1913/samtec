@@ -453,7 +453,7 @@ a:focus {
 }
 
 .service_section .box .detail-box a {
-  color: #00204a;
+  color: #3555aa;
   font-weight: 600;
 }
 
@@ -487,7 +487,7 @@ a:focus {
 }
 
 .about_section {
-  background-color: #00204a;
+  background-color: #3555aa;
   color: #ffffff;
 }
 
@@ -551,7 +551,7 @@ a:focus {
   min-width: 120px;
   min-height: 120px;
   border-radius: 100%;
-  border: 5px solid #00204a;
+  border: 5px solid #3555aa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,7 +566,7 @@ a:focus {
 .why_section .box .img-box img {
   width: 55px;
   height: auto;
-  fill: #00204a;
+  fill: #3555aa;
 }
 
 .why_section .box h5 {
@@ -606,7 +606,7 @@ a:focus {
 /*team section */
 .team_section {
   text-align: center;
-  background-color: #00204a;
+  background-color: #3555aa;
   color: #ffffff;
 }
 
@@ -745,7 +745,7 @@ a:focus {
 }
 
 .client_section .box .detail-box i {
-  color: #00204a;
+  color: #3555aa;
   margin-bottom: 10px;
 }
 
@@ -774,12 +774,12 @@ a:focus {
 
 .client_section .owl-carousel .owl-nav .owl-prev:hover,
 .client_section .owl-carousel .owl-nav .owl-next:hover {
-  color: #00204a;
+  color: #3555aa;
 }
 
 /* client section end */
 .info_section {
-  background-color: #00204a;
+  background-color: #3555aa;
   color: #ffffff;
   padding: 45px 0 15px 0;
 }
@@ -923,7 +923,7 @@ a:focus {
 }
 
 .footer_section p {
-  color: #00204a;
+  color: #3555aa;
   padding: 25px 0;
   margin: 0;
 }
@@ -1069,7 +1069,7 @@ a:focus {
   text-align: right;
 }
 .navbar-nav .dropdown-menu {
-  background-color: #00204a;
+  background-color: #3555aa;
   border: none;
   border-radius: 8px;
   min-width: 180px;
@@ -1087,7 +1087,7 @@ a:focus {
   color: #ffffff;
 }
 .timeline-box {
-  background-color: #00204a;
+  background-color: #3555aa;
   padding: 30px;
   border-radius: 10px;
   font-size: 16px;
@@ -1133,7 +1133,7 @@ a:focus {
 }
 
 .timeline-content {
-  background-color: #00204a;
+  background-color: #3555aa;
   color: #fff;
   padding: 20px;
   border-radius: 8px;
