@@ -127,7 +127,7 @@ a:focus {
 
 .sub_page .hero_area {
   min-height: auto;
-  background: linear-gradient(130deg, #231a6f, #0f054c);
+  background: linear-gradient(130deg, #3555aa, #0f054c);
 }
 /*
 .sub_page .hero_area .hero_bg_box {
@@ -159,7 +159,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 5px 20px;
-  color: #ffffff;
+  color: #3555aa;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
@@ -203,7 +203,7 @@ a:focus {
   display: block;
   width: 35px;
   height: 4px;
-  background-color: #ffffff;
+  background-color: #3555aa;
   margin: 7px 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -218,7 +218,7 @@ a:focus {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #3555aa;
   top: -10px;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
@@ -282,12 +282,12 @@ a:focus {
   
   transform: uppercase;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #3555aa;
 
 }
 
 .slider_section .detail-box p {
-  color: #fefefe;
+  color: #3555aa;
   font-size: 14px;
 }
 
@@ -627,7 +627,7 @@ a:focus {
   -webkit-transition: all .1s;
   transition: all .1s;
   margin-top: 45px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#002759), to(#002b64));
+  background: -webkit-gradient(linear, left top, left bottom, from(#3555aa), to(#3555aa));
   background: linear-gradient(to bottom, #002759, #002b64);
 }
 
@@ -779,7 +779,7 @@ a:focus {
 
 /* client section end */
 .info_section {
-  background-color: #3555aa;
+  background-color: #00204a;
   color: #ffffff;
   padding: 45px 0 15px 0;
 }
@@ -1581,5 +1581,9 @@ a:focus {
   bottom: 0;
   width: 100%;
   height: auto;
+}
+/* Make navbar links bold */
+.navbar-nav .nav-link {
+  font-weight: bold !important;
 }
 /*# sourceMappingURL=style.css.map */
