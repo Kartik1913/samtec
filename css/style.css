@@ -1650,8 +1650,11 @@ a:focus {
 
   .heading-below-navbar h1 {
     color: #3555aa !important;
-    font-size: 25px !important;
+    font-size: 35px !important;
     text-align: left !important;
+  }
+  .slider_section .detail-box h1 {
+    font-size: 21px !important; /* Adjust as needed */
   }
 
   /* Make sure the entire hero area is white */
