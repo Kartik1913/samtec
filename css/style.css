@@ -123,6 +123,9 @@ a:focus {
 .hero_area .hero_bg_box img {
   min-width: 100%;
   min-height: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .sub_page .hero_area {
@@ -947,13 +950,6 @@ a:focus {
   color: #007bff; /* Blue color for hover state */
  
 }
-/* filepath: c:\Users\karti\Downloads\finexo-html\css\style.css */
-.info_link_box a,
-.info_terms a {
-  color: #ffffff; /* Set the default color to white */
-  text-decoration: none; /* Remove underline */
-}
-
 .info_link_box a:hover,
 .info_terms a:hover {
   color: #00bbf0; /* Set hover color to blue */
@@ -963,6 +959,14 @@ a:focus {
 /* Reduce the gap between the sub-columns in the Links section */
 .info_link_box .row {
   column-gap: 10px; /* Adjust the gap between columns */
+  display: flex; /* Use flexbox for proper alignment */
+  gap: 10px; /* Add spacing between the two sub-columns */
+  column-gap: 4px; /* Reduce the gap between sub-columns */
+  justify-content: center; /* Center both columns */
+  gap: 0; /* Remove any default gap */
+  column-gap: 0px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .info_link_box a {
@@ -974,18 +978,6 @@ a:focus {
 .info_link_box a:hover {
   color: #00bbf0; /* Blue color on hover */
   text-decoration: underline; /* Optional underline on hover */
-}
-
-/* Ensure the sub-columns in the Links section are side by side */
-.info_link_box .row {
-  display: flex; /* Use flexbox for proper alignment */
-  gap: 10px; /* Add spacing between the two sub-columns */
-}
-
-.info_link_box .col-6 {
-  flex: 1; /* Ensure both sub-columns take equal width */
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
 .info_link_box a {
@@ -1002,11 +994,7 @@ a:focus {
 .info_terms {
   margin-left: auto; /* Push the section to the right */
   padding-right: 20px; /* Optional: Add extra padding on the right */
-}
-
-/* Reduce the gap between the sub-columns in the Links section */
-.info_link_box .row {
-  column-gap: 4px; /* Reduce the gap between sub-columns */
+  text-align: right;
 }
 
 /* Add spacing between Links and Legal sections */
@@ -1022,36 +1010,19 @@ a:focus {
   margin: 5px 0; /* Add spacing between links */
 }
 
-.info_link_box a:hover,
-.info_terms a:hover {
-  color: #00bbf0; /* Blue color on hover */
-  text-decoration: underline; /* Optional underline on hover */
-}
-/* Tighter spacing for footer link columns */
-.info_link_box .row {
-  justify-content: center; /* Center both columns */
-  gap: 0; /* Remove any default gap */
-}
-
 .info_link_box .col-6 {
+  flex: 1; /* Ensure both sub-columns take equal width */
   max-width: 48%; /* Make them slightly smaller than 50% to allow space */
-  padding-left: 5px;
-  padding-right: 5px;
-}
-/* Reduce space between footer Links columns */
-.info_link_box .row {
-  display: flex;
-  justify-content: center;
-  column-gap: 0px;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.info_link_box .col-6 {
   width: auto;
   padding-left: 10px;
   padding-right: 10px;
   flex: none;
+  padding: 0 !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 !important;
 }
 /* Footer layout fix: keep links together and push legal to right */
 .info_section .row {
@@ -1067,12 +1038,6 @@ a:focus {
 .info_link_box {
   margin: 0 auto;
   margin-left: 100px;
-}
-
-/* Push Legal section to the far right */
-.info_terms {
-  margin-left: auto;
-  text-align: right;
 }
 .navbar-nav .dropdown-menu {
   background-color: #3555aa;
@@ -1158,6 +1123,13 @@ a:focus {
 }
 .hero_bg_box {
   animation: fadeInZoom 2s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  display: block !important;
 }
 
 @keyframes fadeInZoom {
@@ -1296,165 +1268,6 @@ a:focus {
   box-shadow: 0 0 15px rgba(0, 187, 240, 0.7);
   transform: scale(1.1);
 }
-/* Hide carousel arrows on small screens */
-@media (max-width: 768px) {
-  .custom-prev,
-  .custom-next {
-    display: none !important;
-  }
-}
-/* Fix footer layout for mobile screens */
-@media (max-width: 768px) {
-  .info_section .row {
-    flex-direction: column !important;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .info_section .info_col {
-    width: 100% !important;
-    max-width: 100%;
-    margin-bottom: 20px;
-    padding: 0 20px;
-    text-align: left;
-  }
-
-  .info_link_box .row {
-    flex-direction: column;
-  }
-
-  .info_link_box .col-6 {
-    width: 100%;
-    padding: 0;
-    align-items: flex-start !important;
-    text-align: left !important;
-  }
-
-  .info_link_box a,
-  .info_terms a {
-    text-align: left !important;
-    display: block;
-    width: 100%;
-    margin: 4px 0;
-  }
-
-  .info_terms {
-    margin-left: 0 !important;
-    text-align: left !important;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .info_contact .contact_link_box a {
-    justify-content: flex-start;
-  }
-}
-@media (max-width: 768px) {
-  .info_section .info_col {
-    text-align: left !important;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .info_link_box .col-6 {
-    align-items: flex-start !important;
-  }
-
-  .info_terms {
-    text-align: left !important;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 0 !important;
-  }
-
-  .info_link_box a,
-  .info_terms a {
-    text-align: left !important;
-    display: block;
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .info_section .row {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    text-align: left !important;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .info_section .info_col {
-    width: 100% !important;
-    max-width: 100%;
-    margin-bottom: 20px;
-    padding: 0 !important;
-  }
-
-  .info_link_box,
-  .info_terms,
-  .info_contact {
-    width: 100%;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  .info_link_box .row {
-    flex-direction: column;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .info_link_box .col-6 {
-    width: 100%;
-    padding: 0 !important;
-    align-items: flex-start !important;
-  }
-
-  .info_link_box a,
-  .info_terms a,
-  .info_contact a {
-    text-align: left !important;
-    display: block;
-    width: 100%;
-    margin: 4px 0;
-  }
-
-  .info_terms h4,
-  .info_link_box h4,
-  .info_contact h4 {
-    text-align: left;
-  }
-
-  .info_terms {
-    margin-left: 0 !important;
-    text-align: left !important;
-  }
-
-  .info_contact .contact_link_box a {
-    justify-content: flex-start !important;
-  }
-}
-@media (max-width: 768px) {
-  /* Remove left offset from Links group */
-  .info_link_box {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-}
-  
-
-  /* Fix inner columns inside Links */
-  .info_link_box .col-6 {
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   /* Align all headers and links equally */
   .info_link_box h4,
   .info_terms h4,
@@ -1488,6 +1301,9 @@ a:focus {
   text-align: center;
   margin-bottom: 15px;
   font-weight: 600;
+  text-align: left;
+  margin-bottom: 10px;
+  padding-left: 100px;
 }
 
 .link-columns {
@@ -1502,49 +1318,6 @@ a:focus {
   align-items: flex-start;
 }
 
-@media (max-width: 768px) {
-  .links-title {
-    text-align: left;
-    padding-left: 10px;
-  }
-
-  .link-columns {
-    flex-direction: column;
-    gap: 0;
-    padding-left: 10px;
-  }
-
-  .link-columns .col-6 {
-    width: 100%;
-    align-items: flex-start;
-  }
-}
- .links-title {
-  text-align: left;
-  margin-bottom: 10px;
-  padding-left: 100px; !important
-}
-@media (max-width: 768px) {
-  .hero_bg_box {
-    display: block !important;
-    z-index: -1;
-  }
-}
-.hero_area .hero_bg_box img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-.hero_bg_box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  display: block !important;
-}
-
 .hero_bg_box .bg_img_box {
   height: 100%;
   width: 100%;
@@ -1554,11 +1327,6 @@ a:focus {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-@media (max-width: 768px) {
-  .hero_bg_box {
-    display: block !important;
-  }
 }
 .carousel-item img {
   width: auto; /* Ensures the image takes the full width of the container */
@@ -1591,112 +1359,6 @@ a:focus {
 /* Make navbar links bold */
 .navbar-nav .nav-link {
   font-weight: bold !important;
-}
-@media (max-width: 768px) {
-  /* Force white background on mobile */
-  .hero_bg_box {
-    background-color: #ffffff !important;
-  }
-
-  .slider_section,
-  body {
-    background-color: #ffffff !important;
-  }
-
-  .wave-svg {
-    fill: #ffffff !important;
-  }
-
-  .slider_section .detail-box {
-    color: #3555aa !important;
-  }
-}
-@media (max-width: 768px) {
-  /* Make top header and navbar background white */
-  .header_section,
-  .hero_area,
-  .hero_bg_box,
-  .bg_img_box {
-    background-color: #ffffff !important;
-  }
-
-  /* Make the background behind "Nesting Software" text white */
-  .heading-below-navbar {
-    background-color: #ffffff !important;
-  }
-
-  /* Remove unwanted blue SVG wave if visible */
-  .wave-svg {
-    display: none !important;
-  }
-
-  /* Optional: ensure no left/right blue margins */
-  body, html {
-    background-color: #ffffff !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow-x: hidden !important;
-  }
-}
-@media (max-width: 768px) {
-  /* Fix the Nesting Software header area */
-  .heading-below-navbar {
-    background-color: #ffffff !important;
-    margin: 0 !important;
-    padding: 15px 5vw 10px 5vw !important; /* consistent padding */
-    width: 100% !important;
-    box-sizing: border-box !important;
-  }
-
-  .heading-below-navbar h1 {
-    color: #3555aa !important;
-    font-size: 35px !important;
-    text-align: left !important;
-  }
-  .slider_section .detail-box h1 {
-    font-size: 21px !important; /* Adjust as needed */
-  }
-
-  /* Make sure the entire hero area is white */
-  .hero_area,
-  .hero_bg_box,
-  .bg_img_box {
-    background-color: #ffffff !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-  }
-
-  body, html {
-    background-color: #ffffff !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow-x: hidden !important;
-  }
-
-  .wave-svg {
-    display: none !important;
-  }
-}
-@media (max-width: 768px) {
-  .slider_section .img-box {
-    height: 180px; /* Increase this value for more space */
-    display: flex;
-    align-items: flex-start; /* Ensures image starts at the top of the box */
-    justify-content: center;
-    position: relative;
-  }
-  .carousel-img {
-    max-height: 160px;
-    margin-top: 100px !important; /* Lower value moves image up, higher moves it down */
-    width: auto;
-    display: block;
-    position: relative;
-    z-index: 1;
-  }
-  .slider_section {
-    padding-bottom: 80px !important;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
