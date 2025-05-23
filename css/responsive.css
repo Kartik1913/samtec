@@ -1,16 +1,12 @@
-@media (max-width: 1300px) {}
 
-@media (max-width: 1120px) {}
 
 @media (max-width: 992px) {
   .hero_area {
     min-height: auto;
   }
-
 /*   .hero_area {
     background: linear-gradient(130deg, #231a6f, #0f054c);
   } */
-
   .hero_area .hero_bg_box {
     display: none;
   }
@@ -29,13 +25,215 @@
     padding: 5px 25px;
     margin: 5px 0;
   }
-
-
 }
 
 @media (max-width: 768px) {
   .about_section .img-box {
     margin-bottom: 45px;
+  }
+  .custom-prev,
+  .custom-next {
+    display: none !important;
+  }
+  .info_section .row {
+    flex-direction: column !important;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .info_section .info_col {
+    width: 100% !important;
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .info_link_box a,
+  .info_terms a {
+    text-align: left !important;
+    display: block;
+    width: 100%;
+    margin: 4px 0;
+  }
+  .info_terms {
+    margin-left: 0 !important;
+    text-align: left !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left !important;
+  }
+  .info_contact .contact_link_box a {
+    justify-content: flex-start;
+  }
+  .info_section .info_col {
+    text-align: left !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .info_link_box .col-6 {
+    align-items: flex-start !important;
+    width: 100%;
+    padding: 0;
+    text-align: left !important;
+  }
+
+
+  .info_section .row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .info_section .info_col {
+    width: 100% !important;
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 0 !important;
+  }
+
+  .info_link_box,
+  .info_terms,
+  .info_contact {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .info_link_box .row {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .info_link_box a,
+  .info_terms a,
+  .info_contact a {
+    text-align: left !important;
+    display: block;
+    width: 100%;
+    margin: 4px 0;
+  }
+
+  .info_terms h4,
+  .info_link_box h4,
+  .info_contact h4 {
+    text-align: left;
+  }
+  .info_contact .contact_link_box a {
+    justify-content: flex-start !important;
+  }
+  /* Remove left offset from Links group */
+  .info_link_box {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .links-title {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .link-columns {
+    flex-direction: column;
+    gap: 0;
+    padding-left: 10px;
+  }
+
+  .link-columns .col-6 {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  /* Force white background on mobile */
+  .hero_bg_box {
+    background-color: #ffffff !important;
+    display: block !important;
+    z-index: -1;
+  }
+  .slider_section .img-box {
+    height: 180px; /* Increase this value for more space */
+    display: flex;
+    align-items: flex-start; /* Ensures image starts at the top of the box */
+    justify-content: center;
+    position: relative;
+  }
+  .carousel-img {
+    max-height: 160px;
+    margin-top: 100px !important; /* Lower value moves image up, higher moves it down */
+    width: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  .slider_section {
+    padding-bottom: 80px !important;
+  }
+
+  .slider_section,
+  body {
+    background-color: #ffffff !important;
+  }
+ /* Remove unwanted blue SVG wave if visible */
+  .wave-svg {
+    fill: #ffffff !important;
+    display: none !important;
+  }
+
+  .slider_section .detail-box {
+    color: #3555aa !important;
+  }
+  /* Make top header and navbar background white */
+  .header_section,
+  .hero_area,
+  .hero_bg_box,
+  .bg_img_box {
+    background-color: #ffffff !important;
+  }
+  /* Optional: ensure no left/right blue margins */
+  body, html {
+    background-color: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+  /* Fix the Nesting Software header area */
+  .heading-below-navbar {
+    background-color: #ffffff !important;
+    margin: 0 !important;
+    padding: 15px 5vw 10px 5vw !important; /* consistent padding */
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .heading-below-navbar h1 {
+    color: #3555aa !important;
+    font-size: 35px !important;
+    text-align: left !important;
+  }
+  .slider_section .detail-box h1 {
+    font-size: 21px !important; /* Adjust as needed */
+  }
+
+  /* Make sure the entire hero area is white */
+  .hero_area,
+  .hero_bg_box,
+  .bg_img_box {
+    background-color: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  body, html {
+    background-color: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
   }
 
 }
@@ -98,10 +296,14 @@
   }
 }
 
-@media (max-width: 376px) {}
-
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
   }
 }
+
+@media (max-width: 1300px) {}
+
+@media (max-width: 1120px) {}
+
+@media (max-width: 376px) {}
